@@ -1,0 +1,54 @@
+/* Styling for the dashboard page */
+.dashboard-container {
+  padding: 20px;
+  background-color: #f9f9f9;
+  font-family: Arial, sans-serif;
+
+  /* Button Styles */
+  button {
+    padding: 8px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: #0056b3;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  /* Employee Form Modal */
+  .employee-form-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    padding: 30px;
+
+    .employee-form {
+      background-color: white;
+      padding: 40px;
+      border-radius: 8px;
+      width: 200px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  /* Table container */
+  .employee-table-container {
+    margin-top: 30px;
+  }
+}

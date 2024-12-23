@@ -1,0 +1,93 @@
+// Styling for the form container (EmployeeForm)
+.employee-form-container {
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  font-family: Arial, sans-serif;
+
+  // Title for the form
+  h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+  }
+
+  // Input field styling
+  input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #333;
+    background-color: #f9f9f9;
+
+    &:focus {
+      border-color: #007bff;
+      outline: none;
+    }
+  }
+
+  // Button styling
+  button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+
+    &:first-child {
+      background-color: #28a745; // Green for Add/Update button
+      color: #fff;
+
+      &:hover {
+        background-color: #218838;
+      }
+
+      &:active {
+        background-color: #1e7e34;
+      }
+    }
+
+    &:nth-child(2) {
+      background-color: #dc3545; // Red for Cancel button
+      color: #fff;
+
+      &:hover {
+        background-color: #c82333;
+      }
+
+      &:active {
+        background-color: #bd2130;
+      }
+    }
+  }
+}
+
+// Container to position the form on the screen (if needed for modal)
+.employee-form-overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+
+  .employee-form-container {
+    background-color: white;
+    width: 80%;
+    max-width: 450px;
+    padding: 30px;
+  }
+}
